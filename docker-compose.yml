@@ -1,5 +1,5 @@
 nginx:
-  container_name: kratelabs-web
+  container_name: uber-hacks
   restart: always
   image: nginx:alpine
   volumes:

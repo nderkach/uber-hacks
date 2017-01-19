@@ -22,18 +22,16 @@ export const store = new class Store {
 
   // Map
   @observable zoom = 12
-  @observable lat = 43.650128
-  @observable lng = -79.382185
+  @observable lat = 37.7577
+  @observable lng = -122.4376
   @observable bearing = 0.0
   @observable pitch = 0.0
   @observable style = 1
   @observable mapId = 'map'
-  @observable token = 'pk.eyJ1IjoiYWRkeHkiLCJhIjoiY2lsdmt5NjZwMDFsdXZka3NzaGVrZDZtdCJ9.ZUE-LebQgHaBduVwL68IoQ'
+  @observable token = 'pk.eyJ1IjoibmRlcmthY2giLCJhIjoiRmhTM0wtayJ9.gUjWi8kjG_uUl0ckvJMUdw'
 
   styleTable = {
-    1: 'mapbox://styles/addxy/ciq40e6zx0010bkmbbo513b6s',
-    2: 'mapbox://styles/mapbox/outdoors-v9',
-    3: 'mapbox://styles/mapbox/satellite-streets-v9'
+    1: 'mapbox://styles/nderkach/ciy3d4xt8007y2sp6lwxztku0'
   }
 
   sizeTable = {
@@ -66,7 +64,8 @@ export const store = new class Store {
   lightBlue = '#ACC6CB'
 
   constructor() {
-    this.api_url = 'https://api.kratelabs.com'
+    this.api_url = 'https://uber-hacks.herokuapp.com'
+    // this.api_url = 'http://0.0.0.0:5000'
     window.addEventListener('resize', this.listenerResize.bind(this))
   }
 

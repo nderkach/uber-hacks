@@ -30,48 +30,17 @@ export default class Options extends React.Component {
     let buttonOff = 'info'
     let buttonSize = ''
 
+    let text = this.props.loading? "Loading...": "Calculate Fare"
+
     return (
       <div style={ styles.container }>
-        <h2 style={ styles.title }>Options</h2>
-
-        { /* Page Orientation */ }
-        <h4 style={ styles.title }>Orientation</h4>
-        <ButtonGroup bsSize={ buttonSize }>
-          { Object.keys(store.orientationTable).map(key => 
-            <Button
-              key={ key }
-              bsStyle={ store.orientation == key ? 'danger' : buttonOff }
-              onClick={ () => store.orientation = key }>
-              { store.orientationTable[key] }
-            </Button>
-          )}
-        </ButtonGroup>
-
-        { /* Layout Size */ }
-        <h4 style={ styles.title }>Layout Size</h4>
-        <ButtonGroup bsSize={ buttonSize }>
-          { Object.keys(store.sizeTable).map(key =>
-            <Button
-              key={ key }
-              bsStyle={ store.size == key ? buttonOn : buttonOff }
-              onClick={ () => store.size = key }>
-              { store.sizeTable[key][store.orientation] }
-            </Button>
-          )}
-        </ButtonGroup>
-
-        { /* Material Type */ }
-        <h4 style={ styles.title }>Material Type</h4>
-        <ButtonGroup bsSize={ buttonSize }>
-          { Object.keys(store.materialTable).map(key =>
-            <Button
-              key={ key }
-              bsStyle={ store.material == key ? buttonOn : buttonOff }
-              onClick={ () => store.material = key }>
-              { store.materialTable[key] }
-            </Button>
-          )}
-        </ButtonGroup>
+        <Button
+          bsStyle={this.props.loading? 'warning': 'danger'}
+          onClick={this.props.onRequest}
+          disabled={this.props.loading}
+        >
+        { text }
+        </Button>
       </div>
     )
   }

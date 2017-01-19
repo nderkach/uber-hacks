@@ -43,19 +43,18 @@ export default class Result extends React.Component {
       result: {
         textTransform: 'none',
         fontWeight: 'normal',
-        fontFamily: 'fledgling',
         border: 'none',
         cursor: `pointer`,
-        color: (this.state.hover) ? '#FB7461' : 'white',
+        color: 'black',
         textAlign: 'left',
-        fontSize: '35px',
-        paddingBottom: '10px',
+        fontSize: '1.5rem',
+        paddingBottom: '5px',
+        paddingTop: '5px',
+        paddingLeft: '5px',
         outline: 'none',
-        backgroundColor: 'transparent',
+        backgroundColor: 'white',
         transition: 'none',
-        fontWeight: 'bold',
         WebKitTransition: 'none',
-        textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
       }
     }
     store.selection

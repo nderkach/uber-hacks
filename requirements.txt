@@ -1,0 +1,18 @@
+aiofiles==0.3.1
+aiohttp==1.2.0
+AoikLiveReload==0.1.0
+argh==0.26.2
+async-timeout==1.1.0
+chardet==2.3.0
+httptools==0.0.9
+multidict==2.1.4
+pathtools==0.1.2
+PyYAML==3.12
+requests==2.12.4
+sanic==0.5.4
+-e git://github.com/ashleysommer/sanic-cors@4ceedab12c5b5d2d18616871b95afc2e465418cb#egg=Sanic_Cors
+ujson==1.35
+uvloop==0.8.0
+watchdog==0.8.3
+websockets==3.3
+yarl==0.8.1

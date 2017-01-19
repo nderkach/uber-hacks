@@ -62,29 +62,32 @@ export default class Search extends React.Component {
       remove: {
         position: 'absolute',
         right: 10,
-        color: 'white',
-        fontSize: '2.5em',
+        color: 'black',
+        fontSize: '1.5em',
         top: 30,
         cursor: `pointer`,
-        textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
       },
       search: {
+        paddingLeft: '5px',
         textTransform: 'none',
-        fontFamily: 'fledgling',
+        fontFamily: 'Roboto',
+        fontWeight: 400,
+        letterSpacing: '-.045em',
         border: 'none',
-        color: 'white',
-        borderBottom: 'grey',
-        borderBottomStyle: 'dashed',
+        color: 'black',
+        borderBottom: 'black',
+        borderBottomStyle: 'solid',
         borderBottomWidth: 'thin',
-        fontSize: '3em',
+        fontSize: '2rem',
+        lineHeight: 2,
         outline: 'none',
         height: '50px',
-        backgroundColor: 'transparent',
+        backgroundColor: 'white',
         transition: 'none',
-        fontWeight: 'bold',
         width: '100%',
+        WebkitFontSmoothing: 'antialiased',
         WebKitTransition: 'none',
-        textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
+        boxShadow: '0 0 3px #888888'
       }
     }
 

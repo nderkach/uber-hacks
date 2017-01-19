@@ -1,0 +1,12 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "783175110130.dkr.ecr.us-west-2.amazonaws.com/uber-hacks:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "443"
+    }
+  ]
+}

@@ -26,7 +26,7 @@ export function getCenter(geometry) {
   }
 }
 
-export const torontoGeometry = {
+export const initGeometry = {
   bounds: {
     northeast: {
       lat: 43.8554579,
@@ -38,8 +38,8 @@ export const torontoGeometry = {
     }
   },
   location: {
-    lat: 43.653226,
-    lng: -79.3831843
+    lat: 37.7577,
+    lng: -122.4376
   },
   location_type: "APPROXIMATE",
   viewport: {

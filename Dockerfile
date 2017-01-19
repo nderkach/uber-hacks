@@ -1,11 +1,9 @@
-FROM mhart/alpine-node
-MAINTAINER Denis Carriere - carriere.denis@gmail.com
+FROM python:3.5
+MAINTAINER Nikolay Derkach <nikolay@derka.ch>
 
-# Install app dependencies
-WORKDIR /src
-ADD . .
-RUN npm install
+ADD . /code
+WORKDIR /code
+RUN pip install -r requirements.txt
+EXPOSE 5000
 
-# Run App
-EXPOSE 8080
-CMD ['npm', 'start']
+CMD ["python", "start.py"]
